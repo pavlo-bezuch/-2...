@@ -1,5 +1,5 @@
 class Pavlo:
-    def init(self, first_name=None, last_name=None, birth_year=None):
+    def __init__(self, first_name=None, last_name=None, birth_year=None):
         self.first_name = first_name
         self.last_name = last_name
         self.birth_year = birth_year
@@ -18,7 +18,7 @@ class Pavlo:
 
 
 class Student(Pavlo):
-    def init(self, first_name=None, last_name=None, birth_year=None,
+    def __init__(self, first_name=None, last_name=None, birth_year=None,
              college=None, specialty=None, record_book_number=None):
         super().init(first_name, last_name, birth_year)
         self.college = college
